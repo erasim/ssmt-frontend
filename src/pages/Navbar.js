@@ -7,32 +7,42 @@ import { useNavigate } from 'react-router-dom';
 import {handleSuccess } from '../utils';
 
 
-export default function Navbar() {
-  const [show, setShow] = React.useState(true);
+
+export default function Navbar(setIsAuthenticated) {
+
+  const [show, setShow] = useState(true);
   const [loggedInUser, setLoggedInUser] = useState('');
-  const [userloged, setuserloged] = useState(' ');
+ 
   const navigate = useNavigate();
+ 
   useEffect(() => {
       setLoggedInUser(localStorage.getItem('loggedInUser'))
+    
+
+   
+  
   }, [])
 
   const handleLogout = (e) => {
       localStorage.removeItem('token');
       localStorage.removeItem('loggedInUser');
       handleSuccess('User Logout');
+      setLoggedInUser(localStorage.getItem('loggedInUser'))
+      window.location.reload();
+
       setTimeout(() => {
-          navigate('../login');
+          navigate('./Login/Login');
       }, 1000)
   }
 
- 
   
-
+   
+  
 
 
   return (
 
-    <nav className='navbar'>
+    <nav className='navbar' >
     <ul className='nav-ul'>
     <img className='nav-img' src={logo} alt="BigCo Inc. logo"/>
     <div className='li-tag'>
@@ -59,12 +69,12 @@ export default function Navbar() {
         <Link className='link' to="/career">Career</Link>
       </li>
       <li className='nav-li'>
-       {loggedInUser ?<Link className='link' onClick={handleLogout} to="/login">Logout</Link>: <Link className='link' to="/login" >Login</Link>
-        
-       
-       }
-      
+        {loggedInUser ? <Link className='link' onClick={handleLogout} >Logout</Link>
+       : <Link className='link' to="./login" >Login</Link>
+       }  
    
+   
+
       
       </li>
 

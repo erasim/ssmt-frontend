@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-import { handleError, handleSuccess } from '../utils';
+import { handleError} from '../utils';
 import { ToastContainer } from 'react-toastify';
 import homepic from '../images/home-pic.jpg'
 
@@ -9,19 +8,19 @@ function Home() {
   
   const [loggedInUser, setLoggedInUser] = useState('');
   const [products, setProducts] = useState('');
-  const navigate = useNavigate();
+  
   useEffect(() => {
       setLoggedInUser(localStorage.getItem('loggedInUser'))
   }, [])
 
-  const handleLogout = (e) => {
-      localStorage.removeItem('token');
-      localStorage.removeItem('loggedInUser');
-      handleSuccess('User Loggedout');
-      setTimeout(() => {
-          navigate('/login');
-      }, 1000)
-  }
+//   const handleLogout = (e) => {
+//       localStorage.removeItem('token');
+//       localStorage.removeItem('loggedInUser');
+//       handleSuccess('User Loggedout');
+//       setTimeout(() => {
+//           navigate('/login');
+//       }, 1000)
+//   }
 
   const fetchProducts = async () => {
       try {
@@ -48,7 +47,7 @@ function Home() {
 
 <div>
             <h1>Welcome {loggedInUser}</h1>
-            <button onClick={handleLogout}>Logout</button>
+            {/* <button onClick={handleLogout}>Logout</button> */}
             <div>
                 {
                     products && products?.map((item, index) => (

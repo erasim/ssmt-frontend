@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ToastContainer, toast  } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { handleError, handleSuccess } from '../../utils';
 
 function Login() {
@@ -43,6 +43,7 @@ function Login() {
                 localStorage.setItem('loggedInUser', name);
                 setTimeout(() => {
                     navigate('../../home')
+                    window.location.reload();
                 }, 1000)
             } else if (error) {
                 const details = error?.details[0].message;
