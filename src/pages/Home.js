@@ -1,26 +1,40 @@
 import React, { useEffect, useState } from 'react'
-import { handleError} from '../utils';
+import { useNavigate } from 'react-router-dom';
+import { handleError, handleSuccess } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import homepic from '../images/home-pic.jpg'
+import {useDispatch} from 'react-redux'
+// import { bindActionCreators } from 'redux';
+import {actionCreators} from '../state/index'
+
 
 function Home() {
 
   
   const [loggedInUser, setLoggedInUser] = useState('');
   const [products, setProducts] = useState('');
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   
   useEffect(() => {
       setLoggedInUser(localStorage.getItem('loggedInUser'))
+    
+
   }, [])
 
-//   const handleLogout = (e) => {
-//       localStorage.removeItem('token');
-//       localStorage.removeItem('loggedInUser');
-//       handleSuccess('User Loggedout');
-//       setTimeout(() => {
-//           navigate('/login');
-//       }, 1000)
-//   }
+
+  const handleLogout = (e) => {
+      localStorage.removeItem('token');
+      localStorage.removeItem('loggedInUser');
+      handleSuccess('User Loggedout');
+      // Dispatch the value of loggedInUser
+  dispatch(actionCreators.userLogin(''));
+      setTimeout(() => {
+          navigate('/login');
+      }, 1000)
+  }
+
+ 
 
   const fetchProducts = async () => {
       try {
@@ -42,12 +56,19 @@ function Home() {
   useEffect(() => {
       fetchProducts()
   }, [])
+
+  
   return (
     <div className='home'>
 
 <div>
-            <h1>Welcome {loggedInUser}</h1>
-            {/* <button onClick={handleLogout}>Logout</button> */}
+      
+       
+       {/* <button onClick={()=>dispatch(actionCreators.depositeMoney(100))}>-</button > buy item
+        <button onClick={()=>dispatch(actionCreators.withdrawMoney(100))}>+</button> */}
+      
+    
+            
             <div>
                 {
                     products && products?.map((item, index) => (

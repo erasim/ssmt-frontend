@@ -5,11 +5,15 @@ import logo from '../images/logo.svg'
 import { FiAlignJustify } from "react-icons/fi";
 import { useNavigate } from 'react-router-dom';
 import {handleSuccess } from '../utils';
+import { useSelector } from 'react-redux';
+import {useDispatch} from 'react-redux'
+// import { bindActionCreators } from 'redux';
+import {actionCreators} from '../state/index'
 
 
 
 export default function Navbar(setIsAuthenticated) {
-
+  const dispatch = useDispatch();
   const [show, setShow] = useState(true);
   const [loggedInUser, setLoggedInUser] = useState('');
  
@@ -17,22 +21,22 @@ export default function Navbar(setIsAuthenticated) {
  
   useEffect(() => {
       setLoggedInUser(localStorage.getItem('loggedInUser'))
-    
-
-   
-  
   }, [])
+  // const amount = useSelector(state=>state.amount);
+  const user = useSelector(state=>state.user);
+
 
   const handleLogout = (e) => {
       localStorage.removeItem('token');
       localStorage.removeItem('loggedInUser');
       handleSuccess('User Logout');
       setLoggedInUser(localStorage.getItem('loggedInUser'))
-      window.location.reload();
+      dispatch(actionCreators.userLogin(''));
+      // window.location.reload();
 
-      setTimeout(() => {
-          navigate('./Login/Login');
-      }, 1000)
+      // setTimeout(() => {
+      //     navigate('./Login/Login');
+      // }, 1000)
   }
 
   
@@ -69,7 +73,7 @@ export default function Navbar(setIsAuthenticated) {
         <Link className='link' to="/career">Career</Link>
       </li>
       <li className='nav-li'>
-        {loggedInUser ? <Link className='linkbtn' onClick={handleLogout} >Logout</Link>
+        {user ? <Link className='linkbtn' onClick={handleLogout} >Logout</Link>
        : <Link className='linkbtn' to="./login" >Login</Link>
        }  
    
@@ -78,8 +82,10 @@ export default function Navbar(setIsAuthenticated) {
       
       </li>
 
-
+     
       </div>
+
+      
       <button className='nav-icon' onClick={() => setShow(!show)}> 
            <FiAlignJustify /></button>
       {show && <div className='nav-mobile-view'>
@@ -118,6 +124,9 @@ export default function Navbar(setIsAuthenticated) {
         
         </div>}
     </ul>
+   
+
+    {/* <button> Balance-{user}</button> */}
   </nav>
   
     )

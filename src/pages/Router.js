@@ -35,7 +35,7 @@ function Router() {
           <Route path="/services" element={<Services />} />
           <Route path="/tranning" element={<Tranning />} />
           <Route path="/career" element={<Career />} />
-          <Route path='/' element={<Navigate to="../Login/login" />} />
+          <Route path='/' element={<Navigate to="./login" />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/home' element={<PrivateRoute element={<Home />} />} />

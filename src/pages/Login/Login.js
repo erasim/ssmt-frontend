@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import { handleError, handleSuccess } from '../../utils';
+import {useDispatch} from 'react-redux'
+// import { bindActionCreators } from 'redux';
+import {actionCreators} from '../../state/index'
 
 function Login() {
 
@@ -9,6 +12,7 @@ function Login() {
         email: '',
         password: ''
     })
+    const dispatch = useDispatch();
 
     const navigate = useNavigate();
     const handleChange = (e) => {
@@ -41,9 +45,10 @@ function Login() {
                 handleSuccess(message);
                 localStorage.setItem('token', jwtToken);
                 localStorage.setItem('loggedInUser', name);
+                dispatch(actionCreators.userLogin(name));
                 setTimeout(() => {
-                    navigate('../../home')
-                    window.location.reload();
+                    navigate('../home')
+                    // window.location.reload();
                 }, 1000)
             } else if (error) {
                 const details = error?.details[0].message;
