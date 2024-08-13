@@ -73,12 +73,12 @@ export default function Navbar(setIsAuthenticated) {
         <Link className='link' to="/career">Career</Link>
       </li>
       <li className='nav-li'>
-        {user ? <Link className='linkbtn' onClick={handleLogout} >Logout</Link>
+        {user ? <Link className='linkbtn' onClick={handleLogout} >Logout</Link> 
+
        : <Link className='linkbtn' to="./login" >Login</Link>
        }  
+   {user ? <span className='profilename'>{user}</span>:null}
    
-   
-
       
       </li>
 
