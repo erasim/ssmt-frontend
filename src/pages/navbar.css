@@ -39,7 +39,20 @@ text-align: right; */
   text-decoration: none;
   color: #1A5478;
   font-weight: 500;
+  
 }
+.linkbtn {
+
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.5vw;
+  background-color: blue;
+  border-radius: 1ch;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
+}
+
 
 .nav-img {
   position: absolute;
