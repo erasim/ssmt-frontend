@@ -5,6 +5,7 @@ import { handleError, handleSuccess } from '../../utils';
 import {useDispatch} from 'react-redux'
 // import { bindActionCreators } from 'redux';
 import {actionCreators} from '../../state/index'
+import { useSelector } from 'react-redux';
 
 function Login() {
 
@@ -12,8 +13,8 @@ function Login() {
         email: '',
         password: ''
     })
+    const baseUrl = useSelector(state=>state.baseUrl);
     const dispatch = useDispatch();
-
     const navigate = useNavigate();
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -46,9 +47,12 @@ function Login() {
                 localStorage.setItem('token', jwtToken);
                 localStorage.setItem('loggedInUser', name);
                 dispatch(actionCreators.userLogin(name));
+              
                 setTimeout(() => {
-                    navigate('../home')
-                    // window.location.reload();
+                    navigate(`${baseUrl}/home`);
+                    // // window.location.reload();
+                
+                   
                 }, 1000)
             } else if (error) {
                 const details = error?.details[0].message;
@@ -88,7 +92,7 @@ function Login() {
                 </div>
                 <button type='submit'>Login</button>
                 <span>Does't have an account ?
-                    <Link to="/signup">Signup</Link>
+                    <Link to={`${baseUrl}/signup`}>Signup</Link>
                 </span>
             </form>
             

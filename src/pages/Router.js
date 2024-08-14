@@ -1,5 +1,7 @@
 import React from 'react'
 import {Navigate, Routes, Route} from "react-router-dom";
+import {useDispatch} from 'react-redux'
+import {actionCreators} from '../state/index'
 import { useState } from 'react';
 import About from './About';
 import Career from './Career';
@@ -12,11 +14,15 @@ import Navbar from './Navbar';
 import Login from './Login/Login';
 import Signup from './Login/Signup';
 import RefrshHandler from './Login/RefrshHandler';
-// import NavBar from './Nav';
+
 
 function Router() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+  // const baseUrl = "/ssmt-frontend";
+  const baseUrl = "/ssmt-frontend";
+  console.log(baseUrl);
+  const dispatch = useDispatch();
+  dispatch(actionCreators.urlFetch(baseUrl));
   const PrivateRoute = ({ element }) => {
     return isAuthenticated ? element : <Navigate to="./Login/login" />
   }
@@ -27,18 +33,17 @@ function Router() {
             <RefrshHandler setIsAuthenticated={setIsAuthenticated} />
         </div>
        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/*" element={<Home />} /> */}
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/tranning" element={<Tranning />} />
-          <Route path="/career" element={<Career />} />
-          <Route path='/' element={<Navigate to="./login" />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/home' element={<PrivateRoute element={<Home />} />} />
+          <Route path={`${baseUrl}/about`} element={<About />} />
+          <Route path={`${baseUrl}`} element={<Home />} />
+          <Route path={`${baseUrl}/contact`} element={<Contact />} />
+          <Route path={`${baseUrl}/portfolio`} element={<Portfolio />} />
+          <Route path={`${baseUrl}/services`} element={<Services />} />
+          <Route path={`${baseUrl}/tranning`} element={<Tranning />} />
+          <Route path={`${baseUrl}/career`} element={<Career />} />
+          <Route path={`${baseUrl}/*`} element={<Navigate to="./login" />} />
+        <Route path={`${baseUrl}/login`} element={<Login />} />
+        <Route path={`${baseUrl}/signup`} element={<Signup />} />
+        <Route path={`${baseUrl}/home`} element={<PrivateRoute element={<Home />} />} />
          
          
         </Routes>

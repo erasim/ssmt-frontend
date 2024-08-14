@@ -11,16 +11,16 @@ import {actionCreators} from '../state/index'
 function Home() {
 
   
-  const [loggedInUser, setLoggedInUser] = useState('');
+//   const [loggedInUser, setLoggedInUser] = useState('');
   const [products, setProducts] = useState('');
   const navigate = useNavigate();
   const dispatch = useDispatch();
   
-  useEffect(() => {
-      setLoggedInUser(localStorage.getItem('loggedInUser'))
+//   useEffect(() => {
+//       setLoggedInUser(localStorage.getItem('loggedInUser'))
     
 
-  }, [])
+//   }, [])
 
 
   const handleLogout = (e) => {
@@ -87,7 +87,7 @@ function Home() {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat'
     }}>
-         {/* <img className='home-pic' src={homepic} alt="homr-pic"/> */}
+         <img className='home-pic' src={homepic} alt="homr-pic"/>
 <div className='home-text1'>
          <p className='home-heading1'>
          Empowering with revolutionary 

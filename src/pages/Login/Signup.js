@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import { handleError, handleSuccess } from '../../utils';
+import { useSelector } from 'react-redux';
 
 function Signup() {
 
@@ -10,7 +11,7 @@ function Signup() {
         email: '',
         password: ''
     })
-
+    const baseUrl = useSelector(state=>state.baseUrl);
     const navigate = useNavigate();
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -42,7 +43,7 @@ function Signup() {
             if (success) {
                 handleSuccess(message);
                 setTimeout(() => {
-                    navigate('Login/login')
+                    navigate(`${baseUrl}/login`)
                 }, 1000)
             } else if (error) {
                 const details = error?.details[0].message;
@@ -92,7 +93,7 @@ function Signup() {
                 </div>
                 <button type='submit'>Signup</button>
                 <span>Already have an account ?
-                    <Link to="/login">Login</Link>
+                    <Link to={`${baseUrl}/login`}>Login</Link>
                 </span>
             </form>
             <ToastContainer />

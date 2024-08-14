@@ -1,31 +1,33 @@
-export   const depositeMoney= (amount)=>{
-    return (dispatch)=>{
-      dispatch({
-        type:'deposit',
-        payload: amount
-      })
+export const depositeMoney = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'deposit',
+      payload: amount
+    })
 
 
-    }
+  }
 }
 
-export const withdrawMoney= (amount)=>{
-    return (dispatch)=>{
-      dispatch({
-        type:'withdraw',
-        payload: amount
-      })
+export const withdrawMoney = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'withdraw',
+      payload: amount
+    })
 
 
-    }
+  }
 }
 
 
-export const userLogin= (user)=>{
-  return (dispatch)=>{
+
+
+export const userLogin = (user) => {
+  return (dispatch) => {
 
     dispatch({
-      type:'Login',
+      type: 'Login',
       payload: user
     })
 
@@ -33,13 +35,25 @@ export const userLogin= (user)=>{
   }
 }
 
-export const userLogout= (user)=>{
- 
+export const userLogout = (user) => {
 
-  return (dispatch)=>{
+
+  return (dispatch) => {
     dispatch({
-      type:'Logout',
+      type: 'Logout',
       payload: user
+    })
+
+
+  }
+}
+
+
+export const urlFetch = (baseUrl) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'getUrl',
+      payload: baseUrl
     })
 
 
