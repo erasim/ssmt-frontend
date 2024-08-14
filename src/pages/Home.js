@@ -67,7 +67,7 @@ function Home() {
        {/* <button onClick={()=>dispatch(actionCreators.depositeMoney(100))}>-</button > buy item
         <button onClick={()=>dispatch(actionCreators.withdrawMoney(100))}>+</button> */}
       
-    
+            <button className='logoutBtn' onClick={handleLogout}>Logout</button>
             
             <div>
                 {
