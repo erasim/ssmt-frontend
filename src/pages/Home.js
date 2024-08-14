@@ -1,38 +1,31 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-import { handleError, handleSuccess } from '../utils';
+
+// import { useNavigate } from 'react-router-dom';
+import { handleError } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import homepic from '../images/home-pic.jpg'
-import {useDispatch} from 'react-redux'
-// import { bindActionCreators } from 'redux';
-import {actionCreators} from '../state/index'
+// import {useDispatch} from 'react-redux'
+// import {actionCreators} from '../state/index'
+// import { useSelector } from 'react-redux';
 
 
 function Home() {
 
-  
-//   const [loggedInUser, setLoggedInUser] = useState('');
   const [products, setProducts] = useState('');
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  
-//   useEffect(() => {
-//       setLoggedInUser(localStorage.getItem('loggedInUser'))
-    
-
-//   }, [])
+//   const navigate = useNavigate();
+//   const dispatch = useDispatch();
+//   const baseUrl = useSelector(state=>state.baseUrl);
 
 
-  const handleLogout = (e) => {
-      localStorage.removeItem('token');
-      localStorage.removeItem('loggedInUser');
-      handleSuccess('User Loggedout');
-      // Dispatch the value of loggedInUser
-  dispatch(actionCreators.userLogin(''));
-      setTimeout(() => {
-          navigate('/login');
-      }, 1000)
-  }
+//   const handleLogout = (e) => {
+//       localStorage.removeItem('token');
+//       localStorage.removeItem('loggedInUser');
+//       handleSuccess('User Loggedout');
+//   dispatch(actionCreators.userLogin(''));
+//       setTimeout(() => {
+//           navigate(`${baseUrl}/login`);
+//       }, 1000)
+//   }
 
  
 
@@ -67,7 +60,7 @@ function Home() {
        {/* <button onClick={()=>dispatch(actionCreators.depositeMoney(100))}>-</button > buy item
         <button onClick={()=>dispatch(actionCreators.withdrawMoney(100))}>+</button> */}
       
-            <button className='logoutBtn' onClick={handleLogout}>Logout</button>
+            {/* <button className='logoutBtn' onClick={handleLogout}>Logout</button> */}
             
             <div>
                 {

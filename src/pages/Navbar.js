@@ -6,13 +6,14 @@ import { FiAlignJustify } from "react-icons/fi";
 import {handleSuccess } from '../utils';
 import { useSelector } from 'react-redux';
 import {useDispatch} from 'react-redux'
-// import { bindActionCreators } from 'redux';
+import { useNavigate } from 'react-router-dom';
 import {actionCreators} from '../state/index'
 
 
 
 export default function Navbar(setIsAuthenticated) {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [show, setShow] = useState(true);
   const [loggedInUser, setLoggedInUser] = useState('');
   const baseUrl = useSelector(state=>state.baseUrl);
@@ -29,7 +30,9 @@ console.log(loggedInUser);
       handleSuccess('User Logout');
       setLoggedInUser(localStorage.getItem('loggedInUser'))
       dispatch(actionCreators.userLogin(''));
-    
+      setTimeout(() => {
+        navigate(`${baseUrl}/login`);
+    }, 1000)
   }
 
   
