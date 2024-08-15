@@ -32,6 +32,15 @@ text-align: right; */
   margin: 10px;
   font-size: 2vw;
 
+
+}
+.navbar ul li:hover {
+
+
+  border-bottom: 2px solid rgb(19, 18, 18);
+  font-size: 2.1vw;
+  
+
 }
 
 .link {
