@@ -29,16 +29,20 @@ padding-bottom: 30px;}
     padding: auto;
 }
 .card-img-top{
-    /* width: 80%; */
+    width: 80%;
     border-radius: 30px;
     border-radius: inherit;
 }
 .services-cart-box .card{
     margin:10px ;
-    width: 18rem;
+    width: 22rem;
     text-align: left;
-    height: 400px;
+    height: 500px;
     border-radius: 30px;
     
 }
 .services-cart-box p{font-size: 10px;}
+
+.services-cart-box img{
+    border-radius: 30px;
+}
