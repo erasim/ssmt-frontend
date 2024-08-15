@@ -7,6 +7,7 @@ import './pages/footer.css';
 import './pages/home.css';
 import './pages/Login/login.css';
 import 'react-toastify/dist/ReactToastify.css';
+import './Style/services.css'
 function App() {
 
   return (

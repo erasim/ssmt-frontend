@@ -1,0 +1,44 @@
+.services-main{
+
+background-image: linear-gradient(-20deg, rgb(13, 27, 43) 0%, #090124 100%);
+   
+}
+
+.services-heading h1{color: #ffffff;
+font-size: 48px;
+padding-top: 30px;
+padding-bottom: 10px;}
+
+.services-heading h3{color: #ffffff;
+font-size: 16px;
+
+padding-bottom: 30px;}
+
+.services-cart-box .container{
+    width: 85%;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    
+}
+.services-cart-box h5{
+    color: rgb(13, 19, 26);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: auto;
+}
+.card-img-top{
+    /* width: 80%; */
+    border-radius: 30px;
+    border-radius: inherit;
+}
+.services-cart-box .card{
+    margin:10px ;
+    width: 18rem;
+    text-align: left;
+    height: 400px;
+    border-radius: 30px;
+    
+}
+.services-cart-box p{font-size: 10px;}

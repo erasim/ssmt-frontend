@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { handleError } from '../utils';
-import { ToastContainer } from 'react-toastify';
+import React from 'react'
 import homepic from '../images/home-pic.jpg'
 import javaLogo from '../images/Java-Logo.svg.png'
 import python from '../images/phython logo.png'
@@ -19,27 +17,27 @@ import reactlogo from '../images/react.png'
 
 function Home() {
 
-  const [products, setProducts] = useState('');
-  const fetchProducts = async () => {
-      try {
-          // const url = "https://deploy-mern-app-1-api.vercel.app/products";
-          const url = `http://localhost:8080/auth/products`;
-          const headers = {
-              headers: {
-                  'Authorization': localStorage.getItem('token')
-              }
-          }
-          const response = await fetch(url, headers);
-          const result = await response.json();
-          console.log(result);
-          setProducts(result);
-      } catch (err) {
-          handleError(err);
-      }
-  }
-  useEffect(() => {
-      fetchProducts()
-  }, [])
+  // const [products, setProducts] = useState('');
+  // const fetchProducts = async () => {
+  //     try {
+  //         // const url = "https://deploy-mern-app-1-api.vercel.app/products";
+  //         const url = `http://localhost:8080/auth/products`;
+  //         const headers = {
+  //             headers: {
+  //                 'Authorization': localStorage.getItem('token')
+  //             }
+  //         }
+  //         const response = await fetch(url, headers);
+  //         const result = await response.json();
+  //         console.log(result);
+  //         setProducts(result);
+  //     } catch (err) {
+  //         handleError(err);
+  //     }
+  // }
+  // useEffect(() => {
+  //     fetchProducts()
+  // }, [])
 
   
   return (
@@ -74,7 +72,7 @@ function Home() {
 
          <div id='home-div' className="container">
   <div className="row">
-    <div className="col-md-6">
+    <div  className="col-md-6">
       <p className='home-text2-header'>
       Welcome to SSMT Solutions
       </p>
@@ -84,7 +82,7 @@ function Home() {
       <button id='home-btn2' type="button" className="btn btn-outline-secondary">Connect</button>
     </div>
     <div class="col-md-6">
-    <img className='home-pic2' class="grid-button grid-button--primary layout-element__component layout-element__component--GridButton" src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/>
+    <img id='home-pic2' class="grid-button grid-button--primary layout-element__component layout-element__component--GridButton" src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/>
     </div>
     
   </div>
