@@ -14,6 +14,7 @@ import Navbar from './Navbar';
 import Login from './Login/Login';
 import Signup from './Login/Signup';
 import RefrshHandler from './Login/RefrshHandler';
+// import Home2 from './Home2';
 
 
 function Router() {

@@ -1,34 +1,11 @@
 import React, { useEffect, useState } from 'react'
-
-// import { useNavigate } from 'react-router-dom';
 import { handleError } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import homepic from '../images/home-pic.jpg'
-// import {useDispatch} from 'react-redux'
-// import {actionCreators} from '../state/index'
-// import { useSelector } from 'react-redux';
-
 
 function Home() {
 
   const [products, setProducts] = useState('');
-//   const navigate = useNavigate();
-//   const dispatch = useDispatch();
-//   const baseUrl = useSelector(state=>state.baseUrl);
-
-
-//   const handleLogout = (e) => {
-//       localStorage.removeItem('token');
-//       localStorage.removeItem('loggedInUser');
-//       handleSuccess('User Loggedout');
-//   dispatch(actionCreators.userLogin(''));
-//       setTimeout(() => {
-//           navigate(`${baseUrl}/login`);
-//       }, 1000)
-//   }
-
- 
-
   const fetchProducts = async () => {
       try {
           // const url = "https://deploy-mern-app-1-api.vercel.app/products";
@@ -54,52 +31,34 @@ function Home() {
   return (
     <div className='home'>
 
-<div>
-      
-       
-       {/* <button onClick={()=>dispatch(actionCreators.depositeMoney(100))}>-</button > buy item
-        <button onClick={()=>dispatch(actionCreators.withdrawMoney(100))}>+</button> */}
-      
-            {/* <button className='logoutBtn' onClick={handleLogout}>Logout</button> */}
-            
-            <div>
-                {
-                    products && products?.map((item, index) => (
-                        <ul key={index}>
-                            <span>{item.name} : {item.price}</span>
-                        </ul>
-                    ))
-                }
-            </div>
-            <ToastContainer />
-        </div>
+
     <div
     className='home-main'   style={{
       background: `url(${homepic})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      opacity:"90%",
+      
+      
     }}>
-         <img className='home-pic' src={homepic} alt="homr-pic"/>
-<div className='home-text1'>
-         <p className='home-heading1'>
+       
+<div className='home-text'>
+         <h1 className='home-heading1'>
          Empowering with revolutionary 
          digital evolution solutions.
-         </p>
-         <p className='home-heading2'>
+         </h1>
+         <h2 className='home-heading2'>
          Leading the Way in Digital Marketing 
          Solutions for Your Business Success
-         </p>
+         </h2>
          <button id='home-btn1' type="button" className="btn btn-outline-secondary">Explore</button>
          </div>
-
-
-
          </div>
 
-         <div id='home-div' class="container">
-  <div class="row">
-    <div class="col-md-6">
+         <div id='home-div' className="container">
+  <div className="row">
+    <div className="col-md-6">
       <p className='home-text2-header'>
       Welcome to SSMT Solutions
       </p>
