@@ -2,6 +2,20 @@ import React, { useEffect, useState } from 'react'
 import { handleError } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import homepic from '../images/home-pic.jpg'
+import javaLogo from '../images/Java-Logo.svg.png'
+import python from '../images/phython logo.png'
+import chocho from '../images/chocho.jpg'
+import phpLogo from '../images/php.jpg'
+import mernLogo from '../images/mern.png'
+import dotnet from '../images/dotnet.png'
+import awslogo from '../images/aws.jpg'
+import worlpress from '../images/worldpress.png'
+import meanlogo from '../images/mean.jpg'
+import azure from '../images/azure.png'
+import kotlin from '../images/kotlin.jpg'
+import reactlogo from '../images/react.png'
+
+
 
 function Home() {
 
@@ -56,6 +70,8 @@ function Home() {
          </div>
          </div>
 
+         {/* step-2 */}
+
          <div id='home-div' className="container">
   <div className="row">
     <div className="col-md-6">
@@ -68,11 +84,106 @@ function Home() {
       <button id='home-btn2' type="button" className="btn btn-outline-secondary">Connect</button>
     </div>
     <div class="col-md-6">
-    <img className='home-pic2' src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/>
+    <img className='home-pic2' class="grid-button grid-button--primary layout-element__component layout-element__component--GridButton" src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/>
     </div>
     
   </div>
 </div>
+
+
+         {/* step-3 */}
+<div className='home-grid-3'>
+  
+<div className="row">
+    <div className="col-md-6">
+   <div className='home-grid-3-images'>
+   
+  
+    <div className='home-grid-3-pic-1-div' >
+    <img className='home-grid-3-pic-1' src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=328&h=394' alt='home-pic'/>
+    </div>
+    <div className='home-grid-3-pic-2-div' >
+    <img className='home-grid-3-pic-2' src='https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwzfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=263&h=344' alt='home-pic'/>
+    </div>
+
+
+
+
+
+   </div>
+    </div>
+    <div class="col-md-6">
+   <h1 className='home-grid-3-h1'>Our Story at SSMT Solutions</h1>
+   <h3 className='home-grid-3-h3'>Since our humble beginnings in 2020, we have focused on ethical work, integrity, and delivering the best results for our clients. Let us help you achieve higher conversion rates today.</h3>
+    </div>
+    
+  </div>
+
+</div>
+
+         {/* Step-4 */}
+
+         <div className="home-grid-4-main">
+  <div class="row">
+    <div class="col-sm">
+     <img className='home-grid-4-main-logo' src={javaLogo} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={python} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={chocho} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={phpLogo} alt='logo' />
+    </div>
+    <div  class="col-sm">
+    <img className='home-grid-4-main-logo' src={mernLogo} alt='logo' />
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm">
+     <img className='home-grid-4-main-logo' src={dotnet} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={awslogo} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={worlpress} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={meanlogo} alt='logo' />
+    </div>
+    <div  class="col-sm">
+    <img className='home-grid-4-main-logo' src={azure} alt='logo' />
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm">
+     <img className='home-grid-4-main-logo' src={kotlin} alt='logo' />
+    </div>
+    <div class="col-sm">
+    <img className='home-grid-4-main-logo' src={reactlogo} alt='logo' />
+    </div>
+    <div class="col-sm">
+    {/* <img className='home-grid-4-main-logo' src={javaLogo} alt='logo' /> */}
+    </div>
+    <div class="col-sm">
+    {/* <img className='home-grid-4-main-logo' src={javaLogo} alt='logo' /> */}
+    </div>
+    <div  class="col-sm">
+    {/* <img className='home-grid-4-main-logo' src={javaLogo} alt='logo' /> */}
+    </div>
+  </div>
+
+</div>
+
+
+
 
 
     </div>
