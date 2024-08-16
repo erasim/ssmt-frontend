@@ -1,0 +1,69 @@
+.contact-page-main{
+    font-family: sans-serif;
+    
+}
+.contact-page-main h1{
+    font-size: 40px;
+    margin: 10px;
+    text-align: start;
+    padding: 10px;
+    font-weight: 550;
+    
+}
+.contact-grid-2-main span{
+    text-align: left;
+    position: absolute;
+    padding-top: 5px;
+}
+.contact-page-main h5{
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+    text-align: start;
+    padding: 10px;
+    
+}
+.contact-grid-2-main .container{border: none;} 
+
+.contact-grid-2-main iframe{
+  width: 100%;
+  height: 600px;
+}
+.contact-page-grid-1 .container{border: none;
+margin-bottom: 30px;
+padding-bottom: 30px;}
+
+.contact-page-grid-1-pic img{width: 100%;
+border-radius: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.contact-page-main form{text-align: left;
+font-size: 22px; 
+border: 1px solid rgb(46, 44, 44);
+padding: 20px;
+border-radius: 30px;
+box-shadow: 0 4px 8px 0 rgba(27, 26, 26, 0.2), 0 6px 20px 0 rgba(66, 64, 64, 0.19);}
+.contact-page-main form input{
+    border-radius: 10px;
+}
+.contact-page-main form textarea{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-page-main form button{
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.contact-grid-2-main{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#contact-grid-2-left{
+    text-align: start;
+}
+.contact-grid-2-main img{
+    width: 30px; margin-right: 20px; padding: 0px;}

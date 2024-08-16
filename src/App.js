@@ -8,6 +8,8 @@ import './pages/home.css';
 import './pages/Login/login.css';
 import 'react-toastify/dist/ReactToastify.css';
 import './Style/services.css'
+import './Style/contact.css'
+
 function App() {
 
   return (
