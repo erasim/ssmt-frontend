@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
 
-padding: 10px;
+  padding: 10px;
 
 }
 
@@ -17,7 +17,7 @@ text-align: right; */
 .li-tag {
   margin-right: 5px;
   margin-left: auto;
-  
+
   justify-content: flex-end;
   display: flex;
   list-style: none;
@@ -34,12 +34,13 @@ text-align: right; */
 
 
 }
+
 .navbar ul li:hover {
 
 
   border-bottom: 2px solid rgb(19, 18, 18);
   font-size: 2.1vw;
-  
+
 
 }
 
@@ -48,8 +49,9 @@ text-align: right; */
   text-decoration: none;
   color: #1A5478;
   font-weight: 500;
-  
+
 }
+
 .linkbtn {
 
   text-decoration: none;
@@ -61,9 +63,12 @@ text-align: right; */
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
 }
-.headerWel{margin: auto;
-font-weight: 600;
-font-size: 3vw;}
+
+.headerWel {
+  margin: auto;
+  font-weight: 600;
+  font-size: 3vw;
+}
 
 .nav-img {
   position: absolute;
@@ -74,38 +79,74 @@ font-size: 3vw;}
   margin-left: 0px;
 }
 
-.navbar {
-  border: 20px black;
-}
+
 @media screen and (max-width: 960px) {
   .li-tag {
     display: none;
   }
 }
-.nav-icon{
-position: absolute;
-font-size:xx-large;
-display: block;
-border: none;
 
-background-color: aliceblue;
-right: 20px;}
+.nav-icon {
+  position: absolute;
+  font-size: xx-large;
+  display: block;
+  border: none;
+
+  background-color: aliceblue;
+  right: 20px;
+}
+
 @media screen and (min-width: 960px) {
   .nav-icon {
     display: none;
   }
-  .li-tag-mob{
+
+  .li-tag-mob {
     display: none;
   }
 }
 
-.li-tag-mob{
-  
+.li-tag-mob {
+
   list-style: none;
- position: absolute;
- right: 70px;
- top: 30px;
+  position: absolute;
+  right: 70px;
+  top: 30px;
 }
-.profilename{
+
+.profilename {
   margin-left: 10px;
+}
+
+
+/* Mobile view css */
+@media screen and (max-width: 960px) {
+  .li-tag {
+    display: none;
+  }
+
+  .navbar {
+
+    margin-bottom: 30px;
+
+
+  }
+
+  .nav-icon {
+    background-color: black;
+    opacity: 90%;
+    font-size: 20px;
+  }
+
+  .li-tag-mob {
+  
+   
+    border: 1px solid black;
+    
+    background: yellow;
+  
+  }
+  .new-nav-mobile-view{
+    margin-bottom: 180px;
+  }
 }

@@ -35,7 +35,7 @@ function Router() {
         </div>
        <Routes>
           <Route path={`${baseUrl}/about`} element={<About />} />
-          <Route path={`${baseUrl}`} element={<Home />} />
+          <Route path={`${baseUrl}`} element={<Home/>} />
           <Route path={`${baseUrl}/contact`} element={<Contact />} />
           <Route path={`${baseUrl}/portfolio`} element={<Portfolio />} />
           <Route path={`${baseUrl}/services`} element={<Services />} />

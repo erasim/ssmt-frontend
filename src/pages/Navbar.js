@@ -42,7 +42,7 @@ console.log(loggedInUser);
 
 
   return (
-
+<>
     <nav className='navbar' >
     <ul className='nav-ul'>
     <img className='nav-img' src={logo} alt="BigCo Inc. logo"/>
@@ -85,7 +85,7 @@ console.log(loggedInUser);
       
       <button className='nav-icon' onClick={() => setShow(!show)}> 
            <FiAlignJustify /></button>
-      {show && <div className='nav-mobile-view'>
+      {show  && <div className='nav-mobile-view'  >
         
         <ul className='nav-ul'>
     <img className='nav-img' src={logo} alt="BigCo Inc. logo"/>
@@ -125,7 +125,7 @@ console.log(loggedInUser);
 
     {/* <button> Balance-{user}</button> */}
   </nav>
-  
+  </>
     )
 }
 

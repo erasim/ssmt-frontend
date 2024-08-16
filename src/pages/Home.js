@@ -17,28 +17,6 @@ import reactlogo from '../images/react.png'
 
 function Home() {
 
-  // const [products, setProducts] = useState('');
-  // const fetchProducts = async () => {
-  //     try {
-  //         // const url = "https://deploy-mern-app-1-api.vercel.app/products";
-  //         const url = `http://localhost:8080/auth/products`;
-  //         const headers = {
-  //             headers: {
-  //                 'Authorization': localStorage.getItem('token')
-  //             }
-  //         }
-  //         const response = await fetch(url, headers);
-  //         const result = await response.json();
-  //         console.log(result);
-  //         setProducts(result);
-  //     } catch (err) {
-  //         handleError(err);
-  //     }
-  // }
-  // useEffect(() => {
-  //     fetchProducts()
-  // }, [])
-
   
   return (
     <div className='home'>

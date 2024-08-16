@@ -1,8 +1,3 @@
- .home-main{
-
-    
-   
-    }
 
   #home-div .col-md-6{
     padding-left: 20px;
@@ -140,3 +135,23 @@ margin-bottom: 30px;
     height: 100px;
    
 }
+
+@media only screen and (max-width: 600px) {
+    .home-text h1{
+       
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        letter-spacing: normal;
+       
+    } 
+    .home-grid-3{
+        display: none;
+    }
+    #home-pic2{display: none;}
+.home-grid-4-main .col-sm{
+    width: 100px
+}
+}
+
