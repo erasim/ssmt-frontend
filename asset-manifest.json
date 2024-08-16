@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ssmt-frontend/static/css/main.1ae6a282.css",
-    "main.js": "/ssmt-frontend/static/js/main.66e29209.js",
+    "main.css": "/ssmt-frontend/static/css/main.0e981fae.css",
+    "main.js": "/ssmt-frontend/static/js/main.d6cc5fd2.js",
     "static/js/453.8ab44547.chunk.js": "/ssmt-frontend/static/js/453.8ab44547.chunk.js",
     "static/media/home-pic.jpg": "/ssmt-frontend/static/media/home-pic.c9135200dee849369a6a.jpg",
     "static/media/whatsapp icon.jpg": "/ssmt-frontend/static/media/whatsapp icon.4c5cde681f7e93a01301.jpg",
@@ -22,12 +22,12 @@
     "static/media/chocho.jpg": "/ssmt-frontend/static/media/chocho.a95e8c332317079707e3.jpg",
     "static/media/aws.jpg": "/ssmt-frontend/static/media/aws.30671c71d75deec959a3.jpg",
     "index.html": "/ssmt-frontend/index.html",
-    "main.1ae6a282.css.map": "/ssmt-frontend/static/css/main.1ae6a282.css.map",
-    "main.66e29209.js.map": "/ssmt-frontend/static/js/main.66e29209.js.map",
+    "main.0e981fae.css.map": "/ssmt-frontend/static/css/main.0e981fae.css.map",
+    "main.d6cc5fd2.js.map": "/ssmt-frontend/static/js/main.d6cc5fd2.js.map",
     "453.8ab44547.chunk.js.map": "/ssmt-frontend/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ae6a282.css",
-    "static/js/main.66e29209.js"
+    "static/css/main.0e981fae.css",
+    "static/js/main.d6cc5fd2.js"
   ]
 }
