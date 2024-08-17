@@ -141,9 +141,12 @@ text-align: right; */
   .li-tag-mob {
   
     z-index: 1;
-    background: content-box;
+    background: #ffffff;
+    opacity: 60%;
     margin-right: -50px;
     margin-top: 29px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   
   }
   .new-nav-mobile-view{
