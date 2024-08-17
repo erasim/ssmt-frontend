@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ssmt-frontend/static/css/main.8e49e6d6.css",
-    "main.js": "/ssmt-frontend/static/js/main.ac3e3db9.js",
+    "main.js": "/ssmt-frontend/static/js/main.d6efe8c9.js",
     "static/js/453.8ab44547.chunk.js": "/ssmt-frontend/static/js/453.8ab44547.chunk.js",
     "static/media/home-pic.jpg": "/ssmt-frontend/static/media/home-pic.c9135200dee849369a6a.jpg",
     "static/media/whatsapp icon.jpg": "/ssmt-frontend/static/media/whatsapp icon.4c5cde681f7e93a01301.jpg",
@@ -23,11 +23,11 @@
     "static/media/aws.jpg": "/ssmt-frontend/static/media/aws.30671c71d75deec959a3.jpg",
     "index.html": "/ssmt-frontend/index.html",
     "main.8e49e6d6.css.map": "/ssmt-frontend/static/css/main.8e49e6d6.css.map",
-    "main.ac3e3db9.js.map": "/ssmt-frontend/static/js/main.ac3e3db9.js.map",
+    "main.d6efe8c9.js.map": "/ssmt-frontend/static/js/main.d6efe8c9.js.map",
     "453.8ab44547.chunk.js.map": "/ssmt-frontend/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e49e6d6.css",
-    "static/js/main.ac3e3db9.js"
+    "static/js/main.d6efe8c9.js"
   ]
 }
