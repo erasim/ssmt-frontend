@@ -47,7 +47,7 @@ text-align: right; */
 .link {
 
   text-decoration: none;
-  color: #1A5478;
+  color: #0a0a0a;
   font-weight: 500;
 
 }
@@ -91,8 +91,8 @@ text-align: right; */
   font-size: xx-large;
   display: block;
   border: none;
-
-  background-color: aliceblue;
+  border-radius: 12px;
+  background-color: darkblue;
   right: 20px;
 }
 
@@ -140,10 +140,10 @@ text-align: right; */
 
   .li-tag-mob {
   
-   
-    border: 1px solid black;
-    
-    background: yellow;
+    z-index: 1;
+    background: content-box;
+    margin-right: -50px;
+    margin-top: 29px;
   
   }
   .new-nav-mobile-view{
