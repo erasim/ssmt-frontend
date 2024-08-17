@@ -31,7 +31,7 @@ function Router() {
     <>
         <div>
             <Navbar/>
-            <br/><br/><br/><br/><br/>
+            <br/>
             <RefrshHandler setIsAuthenticated={setIsAuthenticated} />
         </div>
        <Routes>
