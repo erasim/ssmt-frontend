@@ -9,6 +9,7 @@ import './pages/Login/login.css';
 import 'react-toastify/dist/ReactToastify.css';
 import './Style/services.css'
 import './Style/contact.css'
+import './Style/Tranning.css'
 
 function App() {
 
