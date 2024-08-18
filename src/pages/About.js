@@ -11,8 +11,9 @@ function About() {
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      opacity:"90%",
-      
+   
+    
+       
       
     }}>
        

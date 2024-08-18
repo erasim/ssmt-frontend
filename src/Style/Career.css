@@ -1,0 +1,86 @@
+
+.contact-page-grid-1-bgcolor{
+    background-color: black;
+    opacity: 0.8;
+    height: 500px;
+    
+}
+.contact-page-grid-1-bgcolor h1{
+    color: #ffffff;
+    font-size: 60px;
+    
+}
+.contact-page-grid-1-bgcolor .row{
+    text-align: -webkit-center;
+    display: inline-block;
+}
+.contact-page-grid-1-bgcolor h5{
+  
+    color: #ffffff;
+   
+}
+.contact-page-grid-1-bgcolor button{
+ margin-right: 40px;
+ background: none;
+ border: 1px solid #ffffff;
+ font-size: 30px;
+ border-radius: 10px;
+   
+}
+.contact-page-grid-1-bgcolor button:hover{
+   
+      font-size: 35px;
+   }
+
+   .career-page-grid-2{
+    
+    margin: 20px;
+   }
+
+   .career-page-grid-2 .container{
+    border: none;
+   }
+   .career-page-grid-2 .card{
+    text-align: -webkit-center;;
+    border: none;
+    height: 400px;
+   }
+   .career-page-grid-2 .card-title{
+    text-align: -webkit-center;;
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-bottom: none;
+    width: 300px;
+    margin: 0px;
+    height: 200px;
+    padding-top: 20px;
+    
+   }
+   .career-page-grid-2 .card-body p{
+   
+    border: 1px solid black;
+    border-top: none;
+    width: 300px;
+  
+   
+    
+    
+   }
+
+   .career-page-grid-2 .card button {
+    position: absolute;
+    top: 250px;
+margin-top: 20px;
+margin-left: -30px;
+border-radius: 10px;
+background: none;
+color: black;
+border: 1px solid black;
+font-size: 15px;
+   }
+
+   .career-page-grid-2 .card button:hover {
+   font-size: 18px;
+   }
+

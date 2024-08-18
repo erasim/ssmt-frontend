@@ -6,33 +6,45 @@
     border: none;
 }
 .training-page-grid-1 {
-    justify-content: center;
-    border: none;
-    background-image:url('../images/training.jpg') ;
-    background-repeat: no-repeat;
-    justify-content: center;
-    background-size:cover;
-    /* background-position-x: center; */
-    position: relative;
-    height: 500px;
+   background-color: black;
+   opacity: 0.8; 
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+
 }
 .training-page-bg{
-    /* z-index: 1; */
-    background-color: black;
-    height: 100%;
-    filter: brightness(40%);
-    border: none;
+    
+  
 }
 .training-page-top-text{
+padding-top: 50px;
+}
+.training-page-grid-1 .container{
+   padding-top: 20px;
+  
+}
+.training-page-grid-1 button{
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+  
     
 }
+.training-page-grid-1 button:hover{
+    font-size: 35px;
+}
+.training-page-grid-1 .row{
+   margin-top: 30px;
+}
 .training-page-top-text h1{
-    margin-top: 30px;
+  position: relative;
      width: 60%;
     margin: auto;
     font-size:40px ;
-    z-index: 5;
-    /* color: #ffffff; */
+    z-index: 1;
+    color: #ffffff;
+    
     
    
 font-family: 'DM Serif Text', serif;
@@ -46,9 +58,12 @@ padding: 10px;
     width: 60%;
     margin: auto;
     font-size:20px ;
-    z-index: 5;
-    /* color: #ffffff; */
+    color: #ffffff;
    
+}
+.training-page-top-text .button{
+    background: none; 
+    border-radius: 1px solid black;
 }
 
 .training-page-grid-2-main{
@@ -58,7 +73,8 @@ margin: 20px;
     border: none;
     text-align: start;
     }
-.training-page-grid-2-main .card{
+.training-page-grid-
+2-main .card{
     border: none;
     border-radius: 10px;
     margin: 20px;

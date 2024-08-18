@@ -1,0 +1,32 @@
+.portfolio-page-grid-1{
+    height: 500px;
+    margin-bottom: 30px;
+    
+}
+.portfolio-page-bg{
+    background-color: black;
+    opacity: 0.8;
+    height: 500px;
+}
+
+.portfolio-page-bg h1{
+    padding-top: 100px;
+   color: #ffffff;
+   font-size: 50px;
+ 
+}
+.portfolio-page-bg p{
+    color: #ffffff;
+    font-size: 20px;
+  
+ }
+ .portfolio-page-bg img{
+    width: 50px;
+    margin: 5px;
+  
+ }
+ .portfolio-page-bg img:hover{
+    width: 55px;
+    
+  
+ }

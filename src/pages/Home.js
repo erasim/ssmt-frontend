@@ -28,7 +28,7 @@ function Home() {
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      opacity:"90%",
+     
       
       
     }}>

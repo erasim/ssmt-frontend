@@ -3,14 +3,21 @@ import training1 from '../images/training1.jpg'
 import training2 from '../images/training2.jpg'
 import training3 from '../images/training3.jpg'
 import training4 from '../images/training4.jpg'
-
+import tarninghome from '../images/training.jpg'
 function Tranning() {
 
 
 
   return (
     <div className='training-page-main'>
-      <div className='training-page-bg'>
+      <div className='training-page-bg'
+      
+      style={{
+        background: `url(${tarninghome})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}>
       <div className='training-page-grid-1'>
         <div className='container' >
           <div className='training-page-top-text'>
