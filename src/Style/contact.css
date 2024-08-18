@@ -26,8 +26,9 @@
 .contact-grid-2-main .container{border: none;} 
 
 .contact-grid-2-main iframe{
-  width: 100%;
+  width: 90%;
   height: 600px;
+  margin: 30px;
 }
 .contact-page-grid-1 .container{border: none;
 margin-bottom: 30px;
@@ -42,6 +43,7 @@ font-size: 22px;
 border: 1px solid rgb(46, 44, 44);
 padding: 20px;
 border-radius: 30px;
+margin: 30px;
 box-shadow: 0 4px 8px 0 rgba(27, 26, 26, 0.2), 0 6px 20px 0 rgba(66, 64, 64, 0.19);}
 .contact-page-main form input{
     border-radius: 10px;

@@ -164,5 +164,9 @@ margin-bottom: 30px;
 .home-grid-4-main .col-sm{
     width: 100px
 }
+
+.home-text2 img{
+    display: none;
+}
 }
 

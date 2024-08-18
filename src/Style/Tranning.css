@@ -28,6 +28,9 @@ padding-top: 50px;
     border-radius: 20px;
     font-family: sans-serif;
     font-weight: 600;
+    margin: 20px;
+    background: none;
+    border: 1px solid white;
   
     
 }
@@ -73,8 +76,7 @@ margin: 20px;
     border: none;
     text-align: start;
     }
-.training-page-grid-
-2-main .card{
+.training-page-grid-2-main .card{
     border: none;
     border-radius: 10px;
     margin: 20px;
@@ -112,7 +114,7 @@ border-radius: 30px;
     }
 .training-page-grid-3-main .card{
     border: none;
-    margin: 20px;
+    margin: 40px;
     }
 .training-page-grid-3-main img{
     margin-bottom: 20px;

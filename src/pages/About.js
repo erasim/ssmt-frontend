@@ -44,7 +44,7 @@ function About() {
       <button id='home-btn2' type="button" className="btn btn-outline-secondary">Connect</button>
     </div>
     <div class="col-md-6">
-    <img className='home-pic2' class="grid-button grid-button--primary layout-element__component layout-element__component--GridButton" src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/>
+    {/* <img className='home-pic2' class="grid-button grid-button--primary layout-element__component layout-element__component--GridButton" src={"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=M3wzOTE5Mjl8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwc29sdXRpb25zfGVufDB8fHx8MTcxNjQ2MDYzN3ww&ixlib=rb-4.0.3&auto=format&fit=crop&w=656&h=497"} alt="BigCo Inc. logo"/> */}
     </div>
     
   </div>
